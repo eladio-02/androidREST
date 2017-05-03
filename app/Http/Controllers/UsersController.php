@@ -6,6 +6,8 @@ use App\User;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Auth;
+
 class UsersController extends Controller
 {
     /**
@@ -45,9 +47,17 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($email)
+     
+
+
+    public function show($email,$password)
     {    
-        return User::all();//find($email);
+        
+       if (Auth::attempt(['email' => $email, 'password' => $password])) {
+            // Authentication passed...
+            return User::where('email', '=', $email)->get();///all()->email == $email;//find($email);
+        }
+        return [];
     }
 
     /**
