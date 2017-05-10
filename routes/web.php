@@ -18,3 +18,5 @@ Route::get('/', function () {
 //Route::resource('users','UsersController');
 Route::resource('users/email.password','UsersController');
 
+Route::resource('animales/','AnimalesController');
+
