@@ -22,3 +22,5 @@ Route::resource('animales/','AnimalesController');
 
 Route::resource('propietarios/','PropietariosController');
 
+Route::resource('registros/','RegistrosController');
+
