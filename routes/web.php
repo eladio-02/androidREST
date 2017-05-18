@@ -20,3 +20,5 @@ Route::resource('users/email.password','UsersController');
 
 Route::resource('animales/','AnimalesController');
 
+Route::resource('propietarios/','PropietariosController');
+
