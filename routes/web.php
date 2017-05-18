@@ -24,3 +24,5 @@ Route::resource('propietarios/','PropietariosController');
 
 Route::resource('registros/','RegistrosController');
 
+Route::resource('fincas/','FincasController');
+
