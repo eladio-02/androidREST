@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Propietarios;
+use App\Registros;
 use Illuminate\Http\Request;
 
 class RegistrosController extends Controller
