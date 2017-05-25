@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model;
 
-class Registros extends Model
+class Inspecciones extends Model
 {
     use Notifiable;
 
@@ -14,9 +14,9 @@ class Registros extends Model
      *
      * @var array
      */
-    protected $table = 'registro_asocebu';
+    protected $table = 'inspecciones';
     protected $fillable = [
-       'id','fecha_emitido', 'propietario_id','animal_registro'
+        "id", "fecha", "finca_id", "num_visita"
     ];
 
     /**
@@ -27,4 +27,5 @@ class Registros extends Model
     protected $hidden = [
        'created_at','updated_at'
     ];
+    
 }

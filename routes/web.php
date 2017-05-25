@@ -18,6 +18,15 @@ Route::get('/', function () {
 //Route::resource('users','UsersController');
 Route::resource('users/email.password','UsersController');
 
+
+Route::get('inspeccion/{fecha}/{finca_id}/{num_visita}','InspeccionesController@store',['only' => [
+ 'store'
+]]);
+
+Route::get('inspeccion/{peso}/{ce}/{sa}/{observaciones}','DetallesController@store',['only' => [
+ 'store'
+]]);
+
 Route::resource('animales/','AnimalesController');
 
 Route::resource('propietarios/','PropietariosController');
