@@ -14,7 +14,7 @@ class Detalles extends Model
      *
      * @var array
      */
-    protected $table = 'fincas';
+    protected $table = 'detalles';
     protected $fillable = [
           'peso', 'ce', 'sa', 'observaciones'
     ];

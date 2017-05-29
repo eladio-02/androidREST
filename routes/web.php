@@ -23,7 +23,7 @@ Route::get('inspeccion/{fecha}/{finca_id}/{num_visita}','InspeccionesController@
  'store'
 ]]);
 
-Route::get('inspeccion/{peso}/{ce}/{sa}/{observaciones}','DetallesController@store',['only' => [
+Route::get('detalles/{peso}/{ce}/{sa}/{observaciones}','DetallesController@store',['only' => [
  'store'
 ]]);
 
